@@ -1,0 +1,19 @@
+﻿  C:\SFML-2.5.0\bin\openal32.dll
+  C:\SFML-2.5.0\bin\sfml-audio-2.dll
+  C:\SFML-2.5.0\bin\sfml-audio-d-2.dll
+  C:\SFML-2.5.0\bin\sfml-graphics-2.dll
+  C:\SFML-2.5.0\bin\sfml-graphics-d-2.dll
+  C:\SFML-2.5.0\bin\sfml-network-2.dll
+  C:\SFML-2.5.0\bin\sfml-network-d-2.dll
+  C:\SFML-2.5.0\bin\sfml-system-2.dll
+  C:\SFML-2.5.0\bin\sfml-system-d-2.dll
+  C:\SFML-2.5.0\bin\sfml-window-2.dll
+  C:\SFML-2.5.0\bin\sfml-window-d-2.dll
+  11 File(s) copied
+  Game.cpp
+g:\opengl-project1\sfmlopengl\game.cpp(210): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+g:\opengl-project1\sfmlopengl\game.cpp(219): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+g:\opengl-project1\sfmlopengl\game.cpp(220): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+g:\opengl-project1\sfmlopengl\game.cpp(222): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+g:\opengl-project1\sfmlopengl\game.cpp(235): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+  SFMLOpenGL.vcxproj -> G:\OpenGL-Project1\Debug\SFMLOpenGL.exe

@@ -2,8 +2,6 @@
 
 Game::Game() : window(VideoMode(800, 600), "OpenGL"), primatives(2)
 {
-	//GLuint VertexArrayID;
-	//glGen
 	index = 0;
 }
 
@@ -70,7 +68,7 @@ void Game::run()
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Z))
 			{
 				rotating = true;
-				m_rotationAngle += 0.00000000000000000000000000000000000000001f;
+				m_rotationAngle += 0.01f;
 				if (m_rotationAngle >= 360)
 				{
 					m_rotationAngle -= 360;
@@ -119,8 +117,8 @@ void Game::run()
 void Game::initialize()
 {
 	int current = 0;
-	bool flip = false;
-	index = 1; glGenLists(primatives);
+	index = 1; 
+	glGenLists(9);
 
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 	glMatrixMode(GL_PROJECTION);
@@ -240,7 +238,7 @@ void Game::initialize()
 	glEndList();
 
 	//Polygon
-	glNewList(index + 10, GL_COMPILE);
+	glNewList(index +9, GL_COMPILE);
 	glBegin(GL_POLYGON); {
 		glVertex3f(0.0, 2.0, -5.0);
 		glVertex3f(-2.0, 1.0, -5.0);
@@ -256,9 +254,8 @@ void Game::update()
 {
 	if (rotating == true)
 	{
-		glRotatef(m_rotationAngle, 0.0f, 0.0f, 1.0f);
+		glRotatef(m_rotationAngle, 0.0f, 0.0f, 0.5f);
 	}
-	//glLoadIdentity();
 	
 	//cout << "Update up" << endl;
 }
@@ -270,7 +267,6 @@ void Game::draw()
 
 
 	glCallList(m_shape);
-	//glCallList(current);
 	window.display();
 	//cout << "Draw up" << endl;
 }
